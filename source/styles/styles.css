@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-container{
+background-color: #eeeeee !important;
+padding-inline: 3em;
+}
+
+.logo{
+    font-family: "Slabo 27px", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.search-btn{
+    border-color: black;
+    color: black;
+    background-color: #eeeeee;
+    border-width: 1px;
+    font-size: 1.1em;
+    font-weight: 700;
+    
+}
+
+.search-btn:hover{
+    background-color: black;
+    color: #999999;
+    border-color: #999999;
+}
+
+.search-input{
+    font-size: 1.1em;
+}
+
+.movies-container{
+    margin-inline: 3em;
+    
+}
+
+.info-container{
+    margin-left: 1em;
+    
+}
+
+.main-cards-container{
+    padding: 2.5em;
+}
+
+.movie-card{
+    text-align: center;
+    border-style: none;
+    display: flex;
+    margin-inline: 20%;
+    border-style: inset;
+    padding: 5px;
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: rgb(44, 44, 44);
+    background-color: #efefef;
+    margin-top: 0;
+    
+}
+
+@media (max-width: 900px){
+    .movie-card{
+        margin-inline: 10%;
+    }
+}
+@media (max-width:700px){
+    .movie-card{
+        display: block;
+        margin-inline: 0;
+    }
+}
+.movie-poster{
+    max-width: 170px;
+    border-radius: 20px;
+    max-height: fit-content;
+    
+}
+
+.movie-title{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin: 0;
+    
+ 
+}
+
+
+.page-btn-container{
+    display: flex;
+    justify-content: space-around;
+    padding-inline: 2em;
+    
+}
+
+.page-btn{
+    text-decoration: none;
+    border-style: solid;
+    font-size: 2em;
+    color: #efefef;
+    padding-inline: 0.5em;
+    border-width: 3px;
+    background-color: black;
+    border-color: #efefef;
+    border-radius: 16px;
+}
+
+.page-btn:hover{
+    background-color: #efefef;
+    border-color:black;
+    color: black;
+}
+
+.movie-genres{
+    
+    font-size: 1.2em;
+    font-weight: bold;
+    
+}
+
+.genres-icon{
+    display: inline;
+    font-size: 1.1em;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #efefef;
+    margin: 5px;
+    text-align: center;
+    max-width: fit-content;
+}
+
+.genres-icon:hover{
+    background-color: black;
+    color: #efefef;
+    font-size: 1.1em;
+    
+}
+
