@@ -31,7 +31,7 @@ function renderMovies(data){
     movieData.forEach(movie=> {
         console.log(movie)
         html+=`
-                <div class=" mt-5 movie-card" >
+                <div class=" movie-card carousel-cell" >
                     <img class="movie-poster" src="https://image.tmdb.org/t/p/original/${movie.poster_path}" class="card-img-top" alt="...">
                     <div class="info-container">
                       <p class="card-text movie-title">${movie.title}</p>
@@ -68,3 +68,14 @@ document.querySelector('.js-previous-page-btn')
             renderPage()
         }
     })
+
+document.querySelector('.js-burger-container')
+    .addEventListener('click', () =>{
+        document.querySelector('.js-burger-container')
+            .classList.toggle('change')
+        document.querySelector('.js-background-change')
+            .classList.toggle('dark-cover')
+        document.querySelector('.js-burger-menu')
+            .classList.toggle('menu-off')
+    })
+
