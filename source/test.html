@@ -15,6 +15,16 @@
         
       </div>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
+    <div class="info-container">
+        <p class="card-text movie-title">${movie.title}</p>
+        <p>${formatDate(movie.release_date)}</p>
+        <div class="container">
+        <div class="genre-${movie.id} movie-genres row">
+        </div>
+        </div>
+        <p>${movie.overview}</p>
+      </div>
+    </div>
 </body>
+
 </html>

@@ -1,8 +1,9 @@
 import dayjs from 'https://cdn.jsdelivr.net/npm/dayjs@1.11.13/+esm'
 
 export function formatDate(releaseDate){
-    return dayjs(releaseDate).format('D MMMM YYYY')
+    return dayjs(releaseDate).format('YYYY')
 }
+
 export function getGenres(data){
     const options = {
         method: 'GET',
@@ -17,7 +18,7 @@ export function getGenres(data){
         .then(response => {
            const allGenres= response.genres
            const movieData = data.results
-           console.log(movieData)
+           
            movieData.forEach(movie => {
             const movieGenres =movie.genre_ids
             let html='';
@@ -28,7 +29,7 @@ export function getGenres(data){
                     }
                 })
             })
-            document.querySelector(`.genre-${movie.id}`).innerHTML=html
+           // document.querySelector(`.genre-${movie.id}`).innerHTML=html
             
            });
         })
