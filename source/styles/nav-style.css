@@ -57,7 +57,7 @@
 .bar1,.bar2,.bar3{
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: #d3d9d4;
     margin: 10px 0;
     transition: 0.4s; 
     
@@ -75,8 +75,8 @@ transform: translate(0, -15px) rotate(45deg);
 }
 
 .dark-cover{
-   background-color: #333;
-   z-index: 3 ;
+   background-color: rgba(0, 0, 0, 0.8);;
+   z-index: 2 ;
    position: fixed;
    background-size: cover;
    height: 100%;
@@ -88,14 +88,21 @@ transform: translate(0, -15px) rotate(45deg);
 
 .burger-menu{
    position: absolute;
-    background-color: #efefef;
+    background-color: #2e3944;
    border-style: solid;
    border-top-style: none;
    border-left-style: none;
    border-width: 2px;
    z-index: 4;
+   height: 100%;
+   width: 50%;
+   color:#748d92 ;
+   animation-name: slide-burger;
+   animation-duration: 4s;
 }
-
+@keyframes slide-burger{
+    0% {left:200px}
+}
 .burger-list{
     list-style-type: none;
     border-style: solid;
@@ -103,12 +110,16 @@ transform: translate(0, -15px) rotate(45deg);
     border-left: none;
     border-right: none;
     border-top: none;
-    padding-right: 5px;
     font-size: 2em;
-    padding: 5px;
-    padding-inline-start: 20px;
+    padding: 5%;
+    cursor: pointer;
+    
 }
 
 .menu-off{
     display: none;
+}
+
+.burger-list-container{
+    text-align: center;
 }
